@@ -2,14 +2,16 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/spec",
+    "outDir": "../../../dist/out-tsc",
+    "module": "commonjs",
     "types": [
-      "jasmine"
+      "jest",
+      "node",
+      "googlemaps"
     ]
   },
   "files": [
-    "src/test.ts",
-    "src/polyfills.ts"
+    "src/test-setup.ts"
   ],
   "include": [
     "src/**/*.spec.ts",
